@@ -54,9 +54,9 @@ public class ExpenseController {
 	}
 	
 	//Build delete expense REST API
-	@DeleteMapping
-	public ResponseEntity<String> deleteExpense(Long expenseId) {
+	@DeleteMapping("{id}")
+	public ResponseEntity<String> deleteExpense(@PathVariable("id") Long expenseId) {
 		expenseService.deleteExpense(expenseId);
-		return ResponseEntity.ok("expense successfully deleted");
+		return ResponseEntity.ok("Expense successfully deleted");
 	}
 }
