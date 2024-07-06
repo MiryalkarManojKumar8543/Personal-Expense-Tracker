@@ -1,10 +1,9 @@
-package com.springboot.exptracker.service;
+package com.springboot.exptracker.service.impl;
 
 import com.springboot.exptracker.dto.CategoryDto;
 import com.springboot.exptracker.entity.Category;
 import com.springboot.exptracker.mapper.CategoryMapper;
 import com.springboot.exptracker.repository.CategoryRepository;
-import com.springboot.exptracker.service.impl.CategoryServiceImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
